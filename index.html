@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class="logo">Daniel Soliz</div>
+        <div>
+            <ul class = "nav-links">
+                <li><a href="#welcome">Welcome</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#reflection">Reflection </a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class="logo">Daniel Soliz</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#welcome" onclick = "toggleMenu()">Welcome</a></li>
+                <li><a href="#projects" onclick = "toggleMenu()">Projects</a></li>
+                <li><a href="#reflection" onclick = "toggleMenu()">Reflection</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id= "profile">
+        <div class="section__pic-container">
+            <img src="/assets/circle_headshot_profile_pic.png" alt="Daniel Soliz Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Daniel Soliz</h1>
+            <p class="section__text__p2">FSU '26</p>
+            <div class="btn-container">
+                <div id="socials-container">
+                    <img 
+                        src="/assets/linkedin.png" 
+                        alt="My Linkedin profile"
+                        class = "icon"
+                        onclick="window.open('https://linkedin.com/in/daniel-soliz18/', '_blank')"
+                    />
+                    <img 
+                        src="/assets/github.png" 
+                        alt="My Github profile"
+                        class = "icon"
+                        onclick="window.open('https://github.com/danielsoliz')"
+                    />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="welcome">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About My Portfolio</h1>
+        <div class="section-container">
+          <div class="section__pic-container">
+            <img
+              src="./assets/noleslogo.png"
+              alt="Profile picture"
+              class="about-pic"
+            />
+          </div>
+          <div class="welcome-details-container">
+            <div class="welcome-containers">
+    
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>B.S Computer Science<br />Expected May 2026</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Greetings! You've arrived at my E-portfolio showcasing the projects completed during my ENC2135 course at Florida State University. This collection highlights my progress in writing skills over the semester. 
+                Throughout the course, we delved into topics such as genre, rhetoric, rhetorical situations, and more. I invite you to explore my portfolio and 
+                read my reflective statement for an insightful journey.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+
+      </section>
+
+    <!-- Projects Section -->
+<section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <!-- Project One -->
+        <div class="details-container color-container">
+            <img src="./assets/one.png" alt="Project 1" class="project-img"/>
+            <h2 class="project-title">Project 3 Notes</h2>
+            <div class="btn-container">
+                <button 
+                    class ="btn project-btn" 
+                    onclick="window.open('/assets/project3notes.pdf', '_blank')"
+                    >
+                    View
+                </button>
+                               
+            </div>
+        </div>
+        <!-- Project Two -->
+        <div class="details-container color-container">
+            <img src="./assets/two.png" alt="Project 2" class="project-img"/>
+            <h2 class="project-title">SRQ 4</h2>
+            <div class="btn-container">
+                <button 
+                    class ="btn project-btn" 
+                    onclick="window.open('/assets/SRQ4.pdf', '_blank')"
+                    >
+                    View
+                </button>
+            </div>
+        </div>
+        <!-- Project Three -->
+        <div class="details-container color-container">
+            <img src="./assets/3.png" alt="Project 3" class="project-img"/>
+            <h2 class="project-title">Revision: Project 2</h2>
+            <div class="btn-container">
+                <button 
+                    class ="btn project-btn" 
+                    onclick="window.open('/assets/revised.pdf', '_blank')"
+                    >
+                    View
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#reflection'"
+    />
+</section>
+
+<section id="reflection">
+    <p class="section__text__p1">View my Reflection</p>
+    <h1 class="title">Reflection</h1>
+    <div class="btn-container">
+        <button 
+            class ="btn project-btn" 
+            onclick="window.open('/assets/ReflectiveStatement.pdf', '_blank')"
+            >
+            View
+        </button>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
