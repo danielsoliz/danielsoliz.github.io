@@ -392,19 +392,35 @@ section {
 
 /* Target the first child of the experience-details-container which is the Project One */
 .experience-details-container > .details-container:first-child .project-img {
-    margin-left: -5rem; /* Adjust this value as needed to move the image to the left */
+    margin-left: 1rem; /* Adjust this value as needed to move the image to the left */
 }
 
 /* Reflection */
 
-#reflection {
+#contact {
     margin-top: 200px;
     padding-top: 4vh;
     text-align: center;
     margin-bottom: 500px;
 }
 
-#reflection .title {
+#contact .title {
     font-size: 3rem; /* Adjust the font size as needed */
 }
-  
+
+#contact .icon-container {
+    display: inline-block; /* Center the image container */
+    margin-top: 20px;
+}
+
+#contact .contact-icon {
+    margin-top: -20px;
+    width: 64px; /* Adjust the size as needed */
+    height: auto; /* This will keep the aspect ratio of the image */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+#contact .contact-icon:hover {
+    transform: scale(1.1); /* Slightly increase the size on hover */
+    cursor: pointer;
+}
